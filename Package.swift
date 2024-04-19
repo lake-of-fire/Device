@@ -23,29 +23,6 @@ let package = Package(
             name: "Device Library", // has to be named different from the iOSApplication or Swift Playgrounds won't open correctly
             targets: ["Device"]
         ),
-        .iOSApplication(
-            name: "Device", // needs to match package name to open properly in Swift Playgrounds
-            targets: ["DeviceTestAppModule"],
-            teamIdentifier: "3QPV894C33",
-            displayVersion: "2.0.10",
-            bundleVersion: "1",
-            appIcon: .asset("AppIcon"),
-            accentColor: .presetColor(.blue),
-            supportedDeviceFamilies: [
-                .pad,
-                .phone
-            ],
-            supportedInterfaceOrientations: [
-                .portrait,
-                .landscapeRight,
-                .landscapeLeft,
-                .portraitUpsideDown(.when(deviceFamilies: [.pad]))
-            ],
-            capabilities: [
-                .outgoingNetworkConnections()
-            ],
-            appCategory: .developerTools
-        ),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
