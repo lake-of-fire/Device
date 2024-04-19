@@ -11,7 +11,7 @@ import AppleProductTypes
 let package = Package(
     name: "Device",
     platforms: [
-        .iOS("15.2"),
+        .iOS("15.0"),
         .macOS("11.0"),
         .tvOS("14.0"),
         .watchOS("6.0"),
