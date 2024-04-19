@@ -35,20 +35,20 @@ let package = Package(
 	            .process("Resources"),
             ]
         ),
-        .executableTarget(
-            name: "DeviceTestAppModule",
-            dependencies: [
-                "Device"
-            ],
-            path: "Development",
-//			exclude: ["Device.xcodeproj/*"],
-//            resources: [
-//                .process("Resources")
+//        .executableTarget(
+//            name: "DeviceTestAppModule",
+//            dependencies: [
+//                "Device"
 //            ],
-            swiftSettings: [
-                .enableUpcomingFeature("BareSlashRegexLiterals")
-            ]
-        ),
+//            path: "Development",
+////			exclude: ["Device.xcodeproj/*"],
+////            resources: [
+////                .process("Resources")
+////            ],
+//            swiftSettings: [
+//                .enableUpcomingFeature("BareSlashRegexLiterals")
+//            ]
+//        ),
         .testTarget(
             name: "DeviceTests",
             dependencies: [
